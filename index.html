@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfoli☆</title>
+</head>
+
+<body>
+<!-- Mobile Blocker-->
+<div id="mobile-blocker">
+            <img src="mobileblocker.png" class="mobile-blocker-image">   
+</div>
+<div id="mobile-blocker-art">
+           <img src="mobileblockerart.png" class="mobile-blocker-art-image">   
+</div>
+
+
+<!-- Start-->
+    <div class="loading"></div>
+
+
+<!-- Taskbar-->
+    <!-- Bar-->
+        <div id="taskbar-bar" class="display-none">
+            <img src="bar.png" class="bar">
+        </div>
+
+    <!-- Date TIme-->
+        <div id="date-time" class="display-none">
+            <p id="current-date-time"></p>
+        </div>
+
+
+<!-- Intro-->
+    <!-- Guide-->
+        <div id="guide" class="display-none">
+            <div id="guide-close">X</div>
+            <img src="guide.png" class="guide-image">
+        </div>
+
+    <!-- Welcome-->
+        <div id="welcome" class="display-none">
+            <div id="welcome-close">x</div>
+            <img src="welcome.gif" class="welcome-image">
+        </div>
+
+    <!-- Alien-->
+        <div id="alien" class="display-none">
+            <div id="alien-close">X</div>
+            <img src="alien.png" class="alien-image">
+        </div>
+
+
+<!-- Apps-->
+    <!-- Abt Me-->
+        <button id="abt-me-button" class="display-none" ondblclick="abtopen()">
+            <img src="abtmebutton.png" class="abt-me-button-image">
+            <p class="abt-me-button-text">About Me</p>
+        </button>
+        <div id="abt-me" class="display-none">
+                <div id="abt-me-close">X</div>
+                <img src="abtme.png" class="abt-me-image">
+        </div>
+
+    <!-- Leadership-->
+        <button id="leadership-button" class="display-none" ondblclick="leaopen()">
+            <img src="leadershipbutton.png" class="leadership-button-image">
+            <p class="leadership-button-text">Leadership</p>
+        </button>
+        <div id="leadership-frame" class="display-none">
+            <div id="leadership-close">X</div>
+            <img src="leadershipframe.png" class="leadership-frame-image">
+            <div id="leadership" class="display-none">
+            <img src="leadership.png" class="leadership-image">
+            </div>
+        </div>
+
+    <!-- Achievements-->
+        <button id="achievements-button" class="display-none" ondblclick="achopen()">
+            <img src="achievementsbutton.png" class="achievements-button-image">
+            <p class="achievements-button-text">Achievements</p>
+        </button>
+        <div id="achievements-frame" class="display-none">
+            <div id="achievements-close">X</div>
+            <img src="achievementsframe.png" class="achievements-frame-image">
+            <div id="achievements" class="display-none">
+            <img src="achievements.png" class="achievements-image">
+            </div>
+        </div>
+ 
+    <!-- VIA-->
+        <button id="VIA-button" class="display-none" ondblclick="VIAopen()">
+            <img src="VIAbutton.png" class="VIA-button-image">
+            <p class="VIA-button-text">VIA</p>
+        </button>
+        <div id="VIA-frame" class="display-none">
+            <div id="VIA-close">X</div>
+            <img src="VIAframe.png" class="VIA-frame-image">
+            <div id="VIA" class="display-none">
+            <img src="VIA.png" class="VIA-image">
+            </div>
+        </div>
+
+    <!-- Course Intrest-->
+        <button id="course-interest-button" class="display-none" ondblclick="couopen()">
+            <img src="courseinterestbutton.png" class="course-interest-button-image">
+            <p class="course-interest-button-text">Course Interest</p>
+        </button>
+        <div id="course-interest" class="display-none">
+            <div id="course-interest-close">X</div>
+            <button id="CCA-button" class="display-none" ondblclick="CCAopen()">
+                <img src="notepadbutton.png" class="CCA-button-image">
+                <p class="CCA-button-text">CCA</p>
+            </button>
+            <button id="shenzhen-button" class="display-none" ondblclick="sheopen()">
+                <img src="notepadbutton.png" class="shenzhen-button-image">
+                <p class="shenzhen-button-text">Shenzhen 2025</p>
+            </button> 
+            <a href="https://drive.google.com/drive/folders/11-OiRoCGMgquQT5IlRv7uOL-jiOieLkt?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                <button id="video-button" class="display-none">
+                <img src="videobutton.png" class="video-button-image">
+                <p class="video-button-text">Phishing Detector</p>
+                </button> 
+            </a> 
+            <img src="courseinterest.png" class="course-interest-image">       
+        </div>
+
+        <!-- CCA-->
+            <div id="CCA-frame" class="display-none">
+                <div id="CCA-close">X</div>
+                <img src="CCAframe.png" class="CCA-frame-image">
+                <div id="CCA" class="display-none">
+                    <img src="CCA.png" class="CCA-image">
+                </div>
+            </div>
+
+        <!-- Shenzhen-->
+            <div id="shenzhen" class="display-none">
+                <div id="shenzhen-close">X</div>
+                <img src="shenzhen.png" class="shenzhen-image">
+            </div>
+     
+    <!-- Bin-->
+        <button id="bin-button" class="display-none" ondblclick="binopen()">
+            <img src="binbutton.png" class="bin-button-image">
+            <p class="bin-button-text">Bin</p>
+        </button>
+        <div id="bin" class="display-none">
+                <div id="bin-close">X</div>
+                <img src="bin.gif" class="bin-image">
+        </div>
+
+    <!-- Demo-->
+        <a href="https://www.figma.com/proto/at5AwrOPlew1MQwXfmIEXd/Figma-app-challenge?node-id=6-2&p=f&t=MF5C6F1D6YUKMfXQ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A2" target="_blank" rel="noopener noreferrer">
+                <button id="demo-button" class="display-none">
+                <img src="demobutton.png" class="demo-button-image">
+                <p class="demo-button-text">Demo</p>
+                </button> 
+        </a>
+
+    <!-- Alt-->
+        <a href="https://sites.google.com/students.edu.sg/loh-megan-portfolio/homepage">
+                <button id="alt-button" class="display-none">
+                <img src="altbutton.png" class="alt-button-image">
+                <p class="alt-button-text">Alternative website</p>
+                </button> 
+        </a>
+
+     <script src="index.js"></script>
+</body>
+</html>
