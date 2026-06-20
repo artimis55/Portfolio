@@ -76,7 +76,7 @@ height: 100vh;
 #guide{
   position: fixed;
   top: 50vh;
-  left: 50vw;
+  left: 49vw;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
