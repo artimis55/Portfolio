@@ -92,8 +92,8 @@ window.addEventListener('DOMContentLoaded', () => {
     Drag('course-interest');
     Drag('CCA-frame');
     Drag('shenzhen');
-    Drag('demo');
-    Drag('alt');
+    Drag('demo-button');
+    Drag('alt-button');
 });
 
 
